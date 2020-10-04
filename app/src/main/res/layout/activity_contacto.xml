@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    >
+
+
+    <include android:id="@+id/miActionBar"
+        layout="@layout/action_bar"
+        >
+
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/miActionBar"
+
+        >
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_subject"
+        android:hint="Tu nombre"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_round"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_from"
+        android:hint="Digita tu correo"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_round"
+        android:inputType="textEmailAddress"/>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/et_message"
+        android:hint="Observaciones"
+        android:padding="12dp"
+        android:gravity="top"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_round"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_send"
+        android:text="Enviar comentarios"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+
+        />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

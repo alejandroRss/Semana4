@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cvContacto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    app:cardCornerRadius="@dimen/corner_radius_cardView"
+    android:layout_marginLeft="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_vertical_margin"
+    >
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cat1"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <ImageView
+            android:id="@+id/imgdogBoneWhite"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="6dp"
+
+            android:layout_below="@id/imgFoto"
+
+            android:src="@drawable/dog_bone" />
+
+        <TextView
+            android:id="@+id/tvNombreCV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgFoto"
+
+            android:text="@string/nombre"
+            android:textSize="@dimen/nombre_cardView"
+            android:textStyle="bold"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+            android:id="@+id/tvRaitingCV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgFoto"
+            android:layout_alignLeft="@id/imgdogBoneYellow"
+            android:layout_marginLeft="-35dp"
+
+            android:layout_marginTop="4dp"
+            android:text="@string/raiting" />
+
+        <ImageView
+            android:id="@+id/imgdogBoneYellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dog_bone_yellow"
+            android:layout_marginTop="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/imgFoto"
+            />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
